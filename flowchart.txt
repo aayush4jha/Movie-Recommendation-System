@@ -1,0 +1,89 @@
+class Profile{
+    // in this class user can create his/her profile with an handle name and 
+    // can store movies name (which will be done using file handling)
+    // that he likes and can make a playlist to keep track of 
+    // upcoming releases he/she is excited for (movie name and release year is stored)
+    // and in liked  movie file film name, info like director,cast, release year and ratings will also be stored
+    
+    // constructor to make user profile (userid / username)
+
+    function to see your liked movies (by name of actors/directors/genre)
+    function to add movies name in your liked movies list
+    function to make a watchlist(upcoming movies with name and relaease year)
+    function for web shows
+
+    // when a user create his/her profile all these options should be 
+    // given to him/her like if it wants to add movies or add upcoming movies names in 
+    // his watchlist then on choice he select releated functions is called and further task
+    // is done
+
+    so when a new profile is created then user is given options to add movies/shows which he already
+     watched in liked movies file or upcoming movies in upcoming movies file
+    and another option to go back to main menu where user can select another option
+ 
+}
+
+// except that additionally when multiple profiles are created then for fast lookup we can use hashing where 
+userid can be a key 
+and related value is object of that user profile 
+
+class recommendation{
+// so in this class i will give my recommendations 
+
+    files for different genres(like action,comedy,romance,thriller,etc.)
+    // so when user want to see recommendation based on genre, program will display all genre name and 
+    whichever user selects related function is called for example when comedy is selected then function to 
+    dispaly file of comedy movies is opened 
+
+    files for hollywood, bollywood, south movies
+    last 2 decades famous bollywood movies
+    movies of different actors
+    movies of different directors
+    web shows
+    upcoming shows and movies;
+    tv shows
+    so these are all options for user to see my recommendations when given these option whichever user selects
+    related file is opened through a 
+    function call in which like if hollywood movies option is selected then a function will be called 
+    to display that file of movies
+}
+
+// so some functions are common in both class like display of movies/shows and in recommendation 
+class it is being used for different genre, regional , actors,directors, etc so this can be made a virtual function in some 
+other class and can be overriden in both class this way i can impement polymorphism
+
+// also use these oop concept data abstraction, encapsulation, polymorphism, inheritance
+// where needed so like this project can be a oop project in c++
+
+
+now when progeam starts user is given options of (main menu) 1.create profile, 2.search profile(lookup for his profile)
+and 3. see recommendations list or 4.exit
+if 1 is selected then user profile is created and by taking userid and then user is given options
+to add movies in liked movies list 
+to add in his upcoming movies list
+to add web or tv shows
+to see his liked movies file
+to see his upcoming releases files
+or go back
+
+if 2 is selected then if his profile exists then options are given
+to add movies in liked movies list 
+to add in his upcoming movies list
+to add web or tv shows
+to see his liked movies file
+to see his upcoming releases files
+or go back
+or if id dont exist then main menu is dispalyed after a error message 
+
+so when 3 is selected then all those options are give i mentioned in recommendation class 
+and then according to users choice related task is performed
+
+so when user create his profile and add data to his liked movies list or watched movies list 
+then i dont want to store it in file instead i want that if for example user is adding data to liked movies 
+then in profile class there will be vector of objects of liked movies class or of watchlist class
+in these class there will be data members of movies info like name, release date, director, actor,
+rating 
+so like if user want to add/see his movies list then he searches his userid and then in his profile object
+all contents of his profile object is accessed 
+i dont want to store profiles in different files 
+
